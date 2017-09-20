@@ -4,59 +4,48 @@
     Welcome to {{title}}!
   </h3>
 </div>
-<div class="panel-group" id="accordion">
+<div class="panel-group">
   <div class="panel panel-default">
-    <div class="panel-heading">
+    <div class="panel-heading under-line">
       <h4 class="panel-title">
-        <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">
-        Collapsible Group 1</a>
+        <a data-toggle="collapse" href="#collapse1">
+        Completed Cases over the past 7 days</a>
       </h4>
     </div>
     <div id="collapse1" class="panel-collapse collapse in">
-      <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-      sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-      minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-      commodo consequat.</div>
+      <div class="panel-body row">
+        <div id="benefitsVerification" class="box col-sm-2"></div>
+        <div id="priorAuthorization" class="box col-sm-2"></div>
+        <div id="precriptionReferal" class="box col-sm-2"></div>
+        <div id="pap" class="box col-sm-2"></div>
+        <div id="coPay" class="box col-sm-2"></div>
+      </div>
     </div>
   </div>
   <div class="panel panel-default">
-    <div class="panel-heading">
+    <div class="panel-heading under-line">
       <h4 class="panel-title">
-        <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">
-        Collapsible Group 2</a>
+        <a data-toggle="collapse" href="#collapse2">
+        Current Cases</a>
       </h4>
     </div>
     <div id="collapse2" class="panel-collapse collapse">
-      <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-      sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-      minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-      commodo consequat.</div>
-    </div>
-  </div>
-  <div class="panel panel-default">
-    <div class="panel-heading">
-      <h4 class="panel-title">
-        <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">
-        Collapsible Group 3</a>
-      </h4>
-    </div>
-    <div id="collapse3" class="panel-collapse collapse">
-      <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-      sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-      minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-      commodo consequat.</div>
+      <div class="panel-body">
+        <div class="panel-heading under-line">
+          <h4 class="panel-title">
+            <a data-toggle="collapse" href="#collapse3">
+            Filter Options</a>
+          </h4>
+        </div>
+        <div id="collapse3" class="panel-collapse collapse">
+          <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+          commodo consequat.</div>
+        </div>
+        <p class= "line"></p>
+      </div>
     </div>
   </div>
 </div>
-<div class="card">
-  <ng-container *ngFor="let contact of data.contacts">
-    <div class="contact-details">
-      <h2>{{contact.statusKey}}</h2>
-      <h2>{{contact.patientID}}</h2>
-      <h2>{{contact.dob}}</h2>
-      <h2>{{contact.name}}</h2>
-      <h2>{{contact.serviceID}}</h2>
-      <h2>{{contact.service}}</h2>
-    </div>
-  </ng-container>
-</div>
+

@@ -1,0 +1,10 @@
+.under-line {
+    border-style: hidden hidden solid hidden;
+    border-color: gray;
+}
+
+.box {
+    height: 100px;
+    width: 200px;
+    background-color: purple;
+}

@@ -1,9 +1,8 @@
-import { Component } from '@angular/core';
-import { HttpModule, Http, Response } from '@angular/http';
-import { Injectable } from '@angular/core';
-import {NgModule} from '@angular/core';
+import { Component, Input, OnChanges, SimpleChange, OnInit } from '@angular/core';
+import { FormGroup, FormControl, Validators } from '@angular/forms';
+import { NgModule } from '@angular/core';
 import {BrowserModule} from '@angular/platform-browser';
-import 'rxjs/add/operator/map';
+import { MyDataService } from './my-data.service';
 
 @Component({
   selector: 'app-root',
@@ -11,27 +10,14 @@ import 'rxjs/add/operator/map';
   styleUrls: ['./app.component.css']
 })
 
-@Injectable()
-export class AppComponent {
+export class AppComponent implements OnInit {
+
+  constructor(private newService: MyDataService) {}
+
   title = 'Cases';
-  private apiUrl = 'http://www.mocky.io/v2/590212490f00006b18d2cb05';
-  data: any = {};
 
-  constructor(private http: Http) {
-    console.log('hi');
-    this.getContacts();
-    this.getData();
-  }
-
-  getData() {
-    return this.http.get(this.apiUrl).subscribe(data => {;
-      //.map((res: Response) => res.json);
-  }
-
-  getContacts() {
-    this.getData().subscribe(data => {
-      console.log(data);
-      this.data = data;
-    });
+  ngOnInit() {
+    this.newService.fetchData();
+    console.log( this.newService.fetchData());
   }
 }
