@@ -2,7 +2,13 @@
 
 #service_types { height: 30px; border: 2px solid gray; margin: 0; }
 
-#serviceTitle { font-weight: bold;}
+#status_key{ height: 30px; border: 2px solid gray; margin: 5px 0 0 0;}
+
+.shape_contain{ position: inherit; margin: 3px 5px 3px 5px }
+
+#status_name { margin:0 5px 0 0;}
+
+.bold { font-weight: bold;}
 
 .under-line {
     border-style: hidden hidden solid hidden;
@@ -60,4 +66,52 @@ th#copay {
 }
 .darkBlue{
     background-color: darkblue;
+}
+.completed {
+    width: 20px;
+    height: 20px;
+    background: green;
+    -moz-border-radius: 20px;
+    -webkit-border-radius: 20px;
+    border-radius: 20px;
+}
+.completed:before {
+    content:"";
+    position: absolute;
+    width: 0;
+    height: 0;
+    top:5px;
+    right:3px;
+	border-top: 5px solid transparent;
+	border-left: 10px solid white;
+	border-bottom: 5px solid transparent;
+}
+.inProgress { 
+    width: 20px;
+    height: 20px;
+    background: blue;
+    -moz-border-radius: 20px;
+    -webkit-border-radius: 20px;
+    border-radius: 20px;
+}
+
+.actionNeeded{
+    width: 20px;
+    height: 20px;
+    background: red;
+    -moz-border-radius: 20px;
+    -webkit-border-radius: 20px;
+    border-radius: 20px;
+}
+
+.actionNeeded:before{
+    content:"";
+    position: absolute;
+    width: 0;
+    height: 0;
+    top:4px;
+    right:5px;
+	border-left: 5px solid transparent;
+	border-right: 5px solid transparent;
+	border-bottom: 10px solid white;
 }
