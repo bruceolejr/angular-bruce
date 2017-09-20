@@ -15,9 +15,11 @@ export class AppComponent implements OnInit {
   constructor(private newService: MyDataService) {}
 
   title = 'Cases';
+  test: any = {};
 
   ngOnInit() {
-    this.newService.fetchData();
+    this.newService.data;
     console.log( this.newService.fetchData());
+    console.log(this.test+'*');
   }
 }

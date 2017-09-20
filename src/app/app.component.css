@@ -1,10 +1,37 @@
+#title { padding:10px 0px 0px 0px;}
 .under-line {
     border-style: hidden hidden solid hidden;
     border-color: gray;
 }
 
-.box {
+table#caseTable {
+    margin: 10px 0px;
+}
+th#pap {
+    text-align: center;
+}
+th#copay {
+    text-align: center;
+}
+.toggle_button {
+    text-align: right;
+    padding: 0;
+}
+.panel-title {
+    padding: 0px 0px 0px 10px;
+}
+.nameCol{
     height: 100px;
-    width: 200px;
+    width: 100px;
+    padding: 5px;
     background-color: purple;
+    color: white;
+}
+.numCol{
+    width:50px;
+    height:100px;
+    background-color: lightpink;
+}
+.smCol{
+    width: 5px;
 }
