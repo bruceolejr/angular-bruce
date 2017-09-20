@@ -1,4 +1,9 @@
 #title { padding:10px 0px 0px 0px;}
+
+#service_types { height: 30px; border: 2px solid gray; margin: 0; }
+
+#serviceTitle { font-weight: bold;}
+
 .under-line {
     border-style: hidden hidden solid hidden;
     border-color: gray;
@@ -34,4 +39,25 @@ th#copay {
 }
 .smCol{
     width: 5px;
+}
+.typeColor{
+    width: 30px;
+    height:15px;
+    border-radius: 3px;
+    margin: 5px;
+}
+.green{
+    background-color: green;
+}
+.yellow{
+    background-color: yellow;
+}
+.lightBlue{
+    background-color: lightseagreen;
+}
+.blue {
+    background-color: blue;
+}
+.darkBlue{
+    background-color: darkblue;
 }
