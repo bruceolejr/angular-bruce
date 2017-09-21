@@ -6,13 +6,15 @@ import { AppComponent } from './app.component';
 import { HttpClientModule } from '@angular/common/http';
 
 import { MyDataService } from './my-data.service';
+import { DataComponent } from './data/data.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    DataComponent
   ],
   imports: [
-    BrowserModule, HttpModule, HttpClientModule, FormsModule,
+    BrowserModule, HttpModule, HttpClientModule, FormsModule, 
   ],
   providers: [MyDataService],
   bootstrap: [AppComponent]

@@ -6,6 +6,7 @@ import { MyDataService } from './my-data.service';
 
 @Component({
   selector: 'app-root',
+  providers: [MyDataService],
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
@@ -13,13 +14,14 @@ import { MyDataService } from './my-data.service';
 export class AppComponent implements OnInit {
 
   constructor(private newService: MyDataService) {}
-
+  
   title = 'Cases';
   test: any = {};
 
-  ngOnInit() {
-    this.newService.data;
-    console.log( this.newService.fetchData());
-    console.log(this.test+'*');
-  }
+   ngOnInit() {
+     this.test = this.newService.fetchData();
+     
+     //console.log( this.newService.fetchData());
+     //console.log(this.test+'*');
+   }
 }
