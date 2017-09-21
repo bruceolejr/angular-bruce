@@ -1,2 +1,6 @@
-.case_row {border: 2px solid gray; margin: 2px 5px; padding: 0px;};
-#case_container div{font-weight: bold;}
+.case_row {border: 2px solid gray; margin: 2px 5px; padding: 0px;}
+.BV {background-color: green; text-align: center; font-size: 13px; border-radius: 3px;}
+.PA {background-color: gold; text-align: center;  font-size: 14px; border-radius: 3px;}
+.CoPay {background-color: blue; text-align: center;  font-size: 14px; border-radius: 3px;}
+.PR {background-color: darkblue; text-align: center;  font-size: 13px; border-radius: 3px;}
+.PAP {background-color: lightseagreen; text-align: center;  font-size: 14px; border-radius: 3px;}

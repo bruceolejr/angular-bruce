@@ -1,0 +1,25 @@
+.nameCol{
+    height: 100px;
+    width: 100px;
+    padding: 5px;
+    background-color: purple;
+    color: white;
+}
+.numCol{
+    font-size: 30px;
+    text-align: center;
+    width:50px;
+    height:100px;
+    background-color: #d08d97;
+}
+.smCol{
+    width: 5px;
+}
+
+th#pap {
+    text-align: center;
+}
+th#copay {
+    text-align: center;
+}
+

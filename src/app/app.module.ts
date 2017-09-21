@@ -5,18 +5,19 @@ import { HttpModule } from '@angular/http';
 import { AppComponent } from './app.component';
 import { HttpClientModule } from '@angular/common/http';
 
-import { MyDataService } from './my-data.service';
 import { DataComponent } from './data/data.component';
+import { CountComponent } from './count/count.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    DataComponent
+    DataComponent,
+    CountComponent
   ],
   imports: [
-    BrowserModule, HttpModule, HttpClientModule, FormsModule, 
+    BrowserModule, HttpModule, HttpClientModule, FormsModule,
   ],
-  providers: [MyDataService],
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -2,9 +2,17 @@
 
 #service_types { border: 2px solid gray; margin: 0; }
 
-#status_key{ height: 30px; border: 2px solid gray; margin: 5px 0 0 0;}
+#status_key{border: 2px solid gray; margin: 5px 0 0 0; padding: 0 5px;}
 
 #status_name { margin:0 5px 0 0;}
+
+#statusKeyText {width: 85px;}
+
+#complete_Key {width: 20%;}
+
+#inProgress-Key {width: 20%; }
+
+#actionNeeded_Key {width: 20%; }
 
 .bold { font-weight: bold;}
 
@@ -16,12 +24,7 @@
 table#caseTable {
     margin: 10px 0px;
 }
-th#pap {
-    text-align: center;
-}
-th#copay {
-    text-align: center;
-}
+
 .toggle_button {
     text-align: right;
     padding: 0;
@@ -29,21 +32,7 @@ th#copay {
 .panel-title {
     padding: 0px 0px 0px 10px;
 }
-.nameCol{
-    height: 100px;
-    width: 100px;
-    padding: 5px;
-    background-color: purple;
-    color: white;
-}
-.numCol{
-    width:50px;
-    height:100px;
-    background-color: lightpink;
-}
-.smCol{
-    width: 5px;
-}
+
 .typeColor{
     width: 30px;
     height:15px;
@@ -54,7 +43,7 @@ th#copay {
     background-color: green;
 }
 .yellow{
-    background-color: yellow;
+    background-color: gold;
 }
 .lightBlue{
     background-color: lightseagreen;
@@ -65,3 +54,5 @@ th#copay {
 .darkBlue{
     background-color: darkblue;
 }
+
+.key_text {font-size: 14px; padding: 1px;}

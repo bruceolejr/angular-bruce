@@ -12,25 +12,7 @@
     </div>
     <div id="collapse1" class="panel-collapse collapse in">
       <div class="panel-body row col-sm-12">
-        <table id="caseTable">
-          <tr>
-            <th id="benefitsVerification" class="nameCol">Benefits Verification</th>
-            <th class="numCol"></th>
-            <th class="smCol"></th>
-            <th id="priorAuthorization" class="nameCol">Prior Authorization</th>
-            <th class="numCol"></th>
-            <th class="smCol"></th>
-            <th id="precriptionReferral" class="nameCol">Precription Referal</th>
-            <th class="numCol"></th>
-            <th class="smCol"></th>
-            <th id="pap" class="nameCol">PAP</th>
-            <th class="numCol"></th>
-            <th class="smCol"></th>
-            <th id="copay" class="nameCol">Copay</th>
-            <th class="numCol"></th>
-            <th class="smCol"></th>
-          </tr>
-        </table>
+        <app-count></app-count>
       </div>
     </div>
   </div>
@@ -56,15 +38,15 @@
       <div id="service_types" class="col-md-12 row">
         <div class="bold">Service Types:</div>
         <div class="typeColor green"></div>
-        <div>Benefits Verification</div>
+        <div class="key_text">Benefits Verification</div>
         <div class="typeColor yellow"></div>
-        <div>Prior Authorization</div>
+        <div class="key_text">Prior Authorization</div>
         <div class="typeColor blue"></div>
-        <div>CoPay</div>
+        <div class="key_text">CoPay</div>
         <div class="typeColor lightBlue"></div>
-        <div>PAP</div>
+        <div class="key_text">PAP</div>
         <div class="typeColor darkBlue"></div>
-        <div>Prescription Referral</div>
+        <div class="key_text">Prescription Referral</div>
       </div>
       <div class="row">
         <div class="col-md-2"></div>
@@ -73,15 +55,15 @@
             <div class="shape_contain">
               <div class="completed"></div>
             </div>
-            <div>Completed</div>
+            <div class="key_text">Completed</div>
             <div class="shape_contain">
               <div class="inProgress"></div>
             </div>
-            <div>In-Progress</div>
+            <div class="key_text">In-Progress</div>
             <div class="shape_contain">
               <div class="actionNeeded"></div>
             </div>
-            <div>Action Needed</div>
+            <div class="key_text">Action Needed</div>
         </div>
         <div class="col-md-2"></div>
       </div>
